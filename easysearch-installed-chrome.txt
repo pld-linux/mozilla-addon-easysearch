@@ -1,0 +1,2 @@
+content,install,url,jar:resource:/chrome/easysearch.jar!/content/easysearch/
+locale,install,url,jar:resource:/chrome/easysearch.jar!/locale/en-US/easysearch/
