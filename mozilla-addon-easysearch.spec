@@ -7,6 +7,7 @@ Release:	2
 License:	GPL
 Group:		X11/Applications/Networking
 Source0:	http://easysearch.mozdev.org/download/%{_realname}_%{version}.xpi
+# Source0-md5:	bb0c5545182037fddb7c656156f89253
 Source1:	%{_realname}-installed-chrome.txt
 URL:		http://easysearch.mozdev.org/
 BuildRequires:	unzip
