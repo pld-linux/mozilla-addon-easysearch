@@ -43,5 +43,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%{_chromedir}/easysearch.jar
+%{_chromedir}/%{_realname}.jar
 %{_chromedir}/%{_realname}-installed-chrome.txt
