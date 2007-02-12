@@ -1,5 +1,5 @@
 Summary:	Mozilla Easy Search Toolbar
-Summary(pl):	Pasek narzêdziowy EasySearch dla mozilli
+Summary(pl.UTF-8):   Pasek narzÄ™dziowy EasySearch dla mozilli
 Name:		mozilla-addon-easysearch
 %define		_realname	easysearch
 Version:	097
@@ -22,8 +22,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Mozilla EasySearch Toolbar - a toolbar with search engines support.
 
-%description -l pl
-Pasek narzêdziowy z wyszukiwarkami dla mozilli.
+%description -l pl.UTF-8
+Pasek narzÄ™dziowy z wyszukiwarkami dla mozilli.
 
 %prep
 
