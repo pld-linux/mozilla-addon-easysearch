@@ -1,7 +1,7 @@
+%define		_realname	easysearch
 Summary:	Mozilla Easy Search Toolbar
 Summary(pl.UTF-8):	Pasek narzędziowy EasySearch dla mozilli
 Name:		mozilla-addon-easysearch
-%define		_realname	easysearch
 Version:	097
 Release:	4
 License:	GPL
@@ -38,10 +38,12 @@ install %{SOURCE1} $RPM_BUILD_ROOT%{_chromedir}
 rm -rf $RPM_BUILD_ROOT
 
 %post
-%{_sbindir}/mozilla-chrome+xpcom-generate
+if [ "$1" = 1 ]; then
+	%{_sbindir}/mozilla-chrome+xpcom-generate
+fi
 
 %postun
-%{_sbindir}/mozilla-chrome+xpcom-generate
+[ ! -x %{_sbindir}/mozilla-chrome+xpcom-generate ] || %{_sbindir}/mozilla-chrome+xpcom-generate
 
 %files
 %defattr(644,root,root,755)
